@@ -7,17 +7,10 @@ import (
 
 func main() {
 	fmt.Println("Hello, World Leetcode!")
-	// minK, maxK (untuk membatasi nilai min & max dari array)
-	minK := 1
-	maxK := 1
-	fmt.Println("minK: ", minK)
-	fmt.Println("maxK: ", maxK)
 
-	// array of integers
-	nums := []int{1, 1, 1, 1}
-	fmt.Println("length of nums: ", len(nums))
+	nums := []int{2, 7, 11, 15}
+	target := 9
 
-	// count subarrays
-	result := leetcode.CountSubarrays(nums, minK, maxK)
+	result := leetcode.TwoSum(nums, target)
 	fmt.Println("result: ", result)
 }
